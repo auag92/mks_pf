@@ -1,0 +1,14 @@
+# Comment
+#PBS -N dynamic_coeff
+#PBS -l walltime=13:00:00
+#PBS -q prometforce-6
+#PBS -l nodes=1:ppn=2
+#PBS -o dynamic_coeff.out$PBS_JOBID
+#PBS -e dynamic_coeff.err$PBS_JOBID
+#PBS -m abe
+#PBS -M david.brough@gatech.edu
+
+module purge
+module load anaconda2
+cd ~/scratch/dynamic_coeff
+python generate_coeff.py
