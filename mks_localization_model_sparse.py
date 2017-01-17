@@ -4,7 +4,6 @@ from sklearn.linear_model import LinearRegression
 from scipy.sparse.linalg import lsmr
 import numpy as np
 
-
 class MKSLocalizationModel(LinearRegression):
 
     """
@@ -14,7 +13,7 @@ class MKSLocalizationModel(LinearRegression):
 
     Attributes:
         basis: Basis function used to discretize the microstucture.
-        n_states: Interger value for number of local states, if a basis
+        n_states: Integer value for number of local states, if a basis
             is specified, n_states indicates the order of the polynomial.
         coef_: Array of values that are the influence coefficients.
 
